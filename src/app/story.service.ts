@@ -45,12 +45,38 @@ export class StoryService implements OnInit {
         Variables: {
             Dialogue: "You gotta fight people to get there!",
             Enemy: "FBIAgent"
-        }
-      }
+        },
+        Options: [{
+            text: "Continue",
+            id: "continue"
+        }]
+      },
       "SleepIn": {
           ImageUrl: null,
-          Title: "You slept in and missed school."
-      }
+          Title: "You slept in and missed school. And the raid."
+      },
+      "continue": {
+          ImageUrl: null,
+          Title: "You decide to join the raid",
+          Type: StoryStageType.Combat,
+          Variables: {
+              Dialogue: "You gotta fight people to get there!",
+              Enemy: "Aliens"
+          },
+          ,
+          Options: [{
+              text: "Continue",
+              id: "win"
+          }]
+      },
+
+      "win": {
+          ImageUrl: null,
+          Title: "You Win!",
+          Variables: {
+              Dialogue: "YOU WIN!"
+          }
+      },
 
     }
   }
