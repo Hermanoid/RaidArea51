@@ -1,0 +1,12 @@
+﻿body {
+    text-align: center;
+    font-weight: 900;
+    background-image: url("../images/victory.jpg");    /*Credit to W3Schools*/
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    color: blue;
+}
+
+.background {
+    background-color: rgb(253, 184, 21);
+}
