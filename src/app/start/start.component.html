@@ -1,17 +1,6 @@
-    <link rel="stylesheet" type="text/css" href="start.component.css" />
-  </head>
-  <body>
-    <h1>Area 51: The Game!</h1>
-    <img src="https://fsmedia.imgix.net/25/19/2e/e6/7feb/409e/aca0/7c4d8344a94d/area-51-is-revealed-in-extraordinary-detail-on-google-maps.png?rect=107%2C37%2C1219%2C611&auto=format%2Ccompress&dpr=2&w=650" height="350" width="500">
-<p>
-  start works!
-    <ol>
-      <li id="1">
-        <button type="button" onclick="CLICKSCRIPT1">OPTION1</button>
-      </li>
-      <li id="2">
-        <button type="button" onclick="CLICKSCRIPT2">OPTION1</button>
-      </li>
-    </ol>
-  </body>
-</html>
+<h1>{{story.stage.Title}}</h1>
+<img *ngIf="story.stage.ImageUrl" [src]="story.stage.ImageUrl" height="350" width="500"/>
+<p *ngIf="story.stage.Variables">{{story.stage.Variables.Dialogue}}<p>
+  <div *ngIf="story.stage.Options">
+    <button *ngFor="let option of story.stage.Options" (click)="story.setStage(option.id)">{{option.text}}</button>
+  </div>
