@@ -21,8 +21,12 @@ export class StoryService implements OnInit {
             id: "School"
         },
         {
-          text: "Fight Somebody",
-          id: "CombatTest"
+          text: "Raid Area 51!",
+          id: "StormArea51"
+            }
+        {
+            text: "Sleep In",
+            id: "SleepIn"
         }
         ]
       },
@@ -34,14 +38,20 @@ export class StoryService implements OnInit {
           Dialogue: "Wow, you're smart.  Yet Boring.  Game Over (for now...)"
         }
       },
-      "CombatTest": {
+      "StormArea51": {
         ImageUrl: null,
-        Title: "You go to school",
+        Title: "You decide to join the raid",
         Type: StoryStageType.Combat,
         Variables: {
-          Dialogue: "Wow, you're smart.  Yet Boring.  Game Over (for now...)"
+            Dialogue: "You gotta fight people to get there!",
+            Enemy: "FBIAgent"
         }
       }
+      "SleepIn": {
+          ImageUrl: null,
+          Title: "You slept in and missed school."
+      }
+
     }
   }
   Stage$: Subject<StoryStage>;
