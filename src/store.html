@@ -1,0 +1,97 @@
+<! let weapons = [
+  ["Weapon", "Range", "Min Damage", "Max Damage", "Weight", "Attack Modifier", "Rate of Fire", "Cost"],
+  ["'Super' Hot Sauce", "Short", 1, 60, 1, 0, 1, 80],
+  ["Tazer", "Medium", 5, 10, 8, 4, 2, 60],
+  ["Lighter and Propane", "Melee", 8, 18, 30, 5, 1, 90]
+];
+
+let items = [
+  ["Name", "Weight", "Cost", "Description"],
+  ["Kyle Fuel(Energy Drink)", 2, 7, "Gives you the energy to function hopefully without a heartattack."],
+  ["Counterfeit Money(500)", 5, 50, "This money doesn't look quite right..."]
+] !>
+
+<div class="weapons">
+
+  <p class="margintop">Purchase your equipment. </p>
+  <div id="purchaseWeapons">
+    <table>
+      <thead>
+        <tr style="font-weight:bold">
+          <th>Weapon</th>
+          <th>Range</th>
+          <th>Min Damage</th>
+          <th>Max Damage</th>
+          <th>Weight</th>
+          <th>Attack Modifier</th>
+          <th>Rate of Fire</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>"Super" Hot Sauce</td>
+        <td>Short</td>
+        <td>1</td>
+        <td>60</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>80</td>
+        <td><input type="button" value="Buy" onclick="buyWeapon('Super Hot Sauce')" /></td>
+      </tr>
+      <tr>
+        <td>Tazer</td>
+        <td>Medium</td>
+        <td>5</td>
+        <td>10</td>
+        <td>8</td>
+        <td>4</td>
+        <td>2</td>
+        <td>60</td>
+        <td><input type="button" value="Buy" onclick="buyWeapon('Tazer')" /></td>
+      </tr>
+      <tr>
+        <td>Lighter and Propane</td>
+        <td>Melee</td>
+        <td>3</td>
+        <td>18</td>
+        <td>30</td>
+        <td>5</td>
+        <td>1</td>
+        <td>90</td>
+        <td><input type="button" value="Buy" onclick="buyWeapon('Lighter and Propane')" /></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="backalley">
+
+  <p class="words">Purchase your equipment.  </p>
+  <div id="purchaseEquipment">
+    <table>
+      <thead>
+        <tr style="font-weight:bold">
+          <th>Name</th>
+          <th>Weight</th>
+          <th>Cost</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+        <tr>
+        <td>Kyle Fuel(Energy Drink)</td>
+        <td>2</td>
+        <td>7</td>
+        <td>Gives you the energy to function without a heart attack</td>
+        <td><input type="button" value="Buy" onclick="buyWeapon('Kyle Fuel')" /></td>
+      </tr>
+      <tr>
+        <td>Counterfeit Money(500)</td>
+        <td>5</td>
+        <td>50</td>
+        <td>This money doesn't look quite right...</td>
+        <td><input type="button" value="Buy" onclick="buyWeapon('Throwing Knife')" /></td>
+      </tr>
+    </table>
+  </div>
+</div>
