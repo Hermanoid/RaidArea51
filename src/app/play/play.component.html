@@ -2,5 +2,7 @@
   <ng-container [ngSwitch]="storyType">
     <app-start *ngSwitchCase="storyStageType.Start"></app-start>
     <app-decision *ngSwitchCase="storyStageType.Decision"></app-decision>
+    <app-combat *ngSwitchCase="storyStageType.Combat"></app-combat>
+
   </ng-container>
 </div>

@@ -4,7 +4,7 @@ import { StoryService } from '../story.service';
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
-  styleUrls: ['./start.component.sass']
+  styleUrls: ['./start.component.scss']
 })
 export class StartComponent implements OnInit {
 

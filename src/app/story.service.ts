@@ -19,13 +19,25 @@ export class StoryService implements OnInit {
         Options: [{
             text: "Go to School",
             id: "School"
-          }
+        },
+        {
+          text: "Fight Somebody",
+          id: "CombatTest"
+        }
         ]
       },
       "School": {
         ImageUrl: null,
         Title: "You go to school",
         Type: StoryStageType.Decision,
+        Variables: {
+          Dialogue: "Wow, you're smart.  Yet Boring.  Game Over (for now...)"
+        }
+      },
+      "CombatTest": {
+        ImageUrl: null,
+        Title: "You go to school",
+        Type: StoryStageType.Combat,
         Variables: {
           Dialogue: "Wow, you're smart.  Yet Boring.  Game Over (for now...)"
         }

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
 import { DecisionComponent } from './decision/decision.component';
 import { PlayComponent } from './play/play.component';
+import { CombatComponent } from './combat/combat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
     DecisionComponent,
-    PlayComponent
+    PlayComponent,
+    CombatComponent
   ],
   imports: [
     BrowserModule,

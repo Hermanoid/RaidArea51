@@ -7,7 +7,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 @Component({
   selector: 'app-play',
   templateUrl: './play.component.html',
-  styleUrls: ['./play.component.sass']
+  styleUrls: ['./play.component.scss']
 })
 export class PlayComponent implements OnInit {
   storyStageType = StoryStageType;

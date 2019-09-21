@@ -3,7 +3,7 @@ export class StoryStage {
   Title: string;
   Type: StoryStageType;
   Variables: { [id: string]: string } = {};
-  Options?: [{ id: string, text: string }];
+  Options?: { id: string, text: string }[];
 }
 
 export class Story {
