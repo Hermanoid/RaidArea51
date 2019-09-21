@@ -11,8 +11,9 @@ export class Story {
 }
 
 export enum StoryStageType {
-    Start,
-    Decision,
+  Start,
+  Decision,
   Combat,
-    Error
+  Store,
+  Error
 }
