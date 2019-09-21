@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StoryService } from '../story.service';
 
 @Component({
   selector: 'app-decision',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DecisionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private story: StoryService) { }
 
   ngOnInit() {
   }

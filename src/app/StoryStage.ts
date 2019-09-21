@@ -2,8 +2,8 @@ export class StoryStage {
   ImageUrl: string;
   Title: string;
   Type: StoryStageType;
-  Variables: { [id: string]: string };
-  Options: { [Text: string]: string };
+  Variables: { [id: string]: string } = {};
+  Options?: [{ id: string, text: string }];
 }
 
 export class Story {
@@ -11,5 +11,8 @@ export class Story {
 }
 
 export enum StoryStageType {
-  Start, Dialogue, Combat
+    Start,
+    Decision,
+  Combat,
+    Error
 }
