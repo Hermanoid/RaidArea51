@@ -1,0 +1,50 @@
+﻿/*Credit to https://www.xanthir.com/b4U10 for CSS comment syntax*/
+
+body {
+    background-color: black;
+}
+
+h1 h3 ul {
+    color: green!important
+}
+
+#PLHealth {
+    color: green;
+    background-color: gray;
+}
+
+#ENHealth {
+    color: red;
+    background-color: gray;
+}
+
+#datalist {
+    width: 610px;
+    background-color: dimgray;
+    border: 5px solid green;
+    margin: 15px;
+}
+
+#attackbutton {
+    width: 100px;
+    height: 100px;
+    background-color: dimgray;
+    border: 5px solid green;
+    text-align: center;
+}
+
+.data {
+    width: 300;
+    display: inline-block;    /*Credit to book Heads First into HTML and CSS*/
+}
+
+.combatant {
+    width: 500px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.healthbar {
+    width: 500px;
+    height: 20px;
+}
