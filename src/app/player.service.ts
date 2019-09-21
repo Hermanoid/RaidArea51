@@ -11,11 +11,10 @@ import { Opponent } from 'src/app/Opponent';
 
 
 export class PlayerService {
-  player: Player = new Player(null, null, null, null, null, null, null, null, null);
-  weapon: PlayerWeapon = new PlayerWeapon(null, null, null, null, null, null, null, null);
+  public player: Player = new Player(null, null, null, null, null, null, null, null, null);
+  public weapon: PlayerWeapon = new PlayerWeapon(null, null, null, null, null, null, null, null);
 
   constructor(private enemyService: EnemyService) {
-
   }
   //PlayerCharacter() {
   //  this.player.firstName = "";

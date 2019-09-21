@@ -4,7 +4,7 @@
   <!--<! picture of player !>-->
 <div class="combatant" id="player">
   <img src="../assets/protagonist.png" style="width: 500px" />
-  <progress class="healthbar" id="PLHealth" value="10" max="20"></progress>    <! credit to www.w3schools.com !>
+  <progress class="healthbar" id="PLHealth" [value]="playerService.player.health" max="25"></progress>    <! credit to www.w3schools.com !>
 </div>
 
   <!--<! picture of enemy !>-->
@@ -18,20 +18,21 @@
   <div class="data">
     <h3>Player Statisitics</h3>
     <ul>
-      <li>Offense Points: </li>
-      <li>Defense Points: </li>
-      <li>Luck: </li>
-      <li>Health: </li>
+      <li>Offense Points: {{playerService.player.combatOffense}}</li>
+      <li>Defense Points: {{playerService.player.combatDefense}}</li>
+      <li>Luck: {{playerService.player.luck}}</li>
+      <li>Health: {{playerService.player.health}}</li>
     </ul>
   </div>
   <div class="data">
     <h3>Enemy Statisitics</h3>
-    <ul>
-      <li>Offense Points: </li>
-      <li>Defense Points: </li>
-      <li>Luck: </li>
-      <li>Health: </li>
-    </ul>
+    <!--<ul>
+      <li>Offense Points: {{enemyService.Enemies[storyService.playerService.player.combatOffense}}</li>
+      <li>Defense Points: {{playerService.player.combatDefense}}</li>
+      <li>Luck: {{playerService.player.luck}}</li>
+      <li>Health: {{playerService.player.health}}</li>
+    </ul>-->
+    <p>SCARY</p>
   </div>
 </div>
-<button onclick="attack" id="attackbutton"><h2>Attack!</h2></button>
+<button (click)="attack()" class="btn btn-warning"><h2>Attack!</h2></button>

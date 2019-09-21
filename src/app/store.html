@@ -1,4 +1,4 @@
-<! let weapons = [
+<!--<! let weapons = [
   ["Weapon", "Range", "Min Damage", "Max Damage", "Weight", "Attack Modifier", "Rate of Fire", "Cost"],
   ["'Super' Hot Sauce", "Short", 1, 60, 1, 0, 1, 80],
   ["Tazer", "Medium", 5, 10, 8, 4, 2, 60],
@@ -9,7 +9,7 @@ let items = [
   ["Name", "Weight", "Cost", "Description"],
   ["Kyle Fuel(Energy Drink)", 2, 7, "Gives you the energy to function hopefully without a heartattack."],
   ["Counterfeit Money(500)", 5, 50, "This money doesn't look quite right..."]
-] !>
+] !>-->
 
 <div class="weapons">
 
@@ -37,7 +37,7 @@ let items = [
         <td>0</td>
         <td>1</td>
         <td>80</td>
-        <td><input type="button" value="Buy" onclick="buyWeapon('Super Hot Sauce')" /></td>
+        <td><input type="button" value="Buy" (click)="buyWeapon('Super Hot Sauce')" /></td>
       </tr>
       <tr>
         <td>Tazer</td>
@@ -48,7 +48,7 @@ let items = [
         <td>4</td>
         <td>2</td>
         <td>60</td>
-        <td><input type="button" value="Buy" onclick="buyWeapon('Tazer')" /></td>
+        <td><input type="button" value="Buy" (click)="buyWeapon('Tazer')" /></td>
       </tr>
       <tr>
         <td>Lighter and Propane</td>
@@ -59,7 +59,7 @@ let items = [
         <td>5</td>
         <td>1</td>
         <td>90</td>
-        <td><input type="button" value="Buy" onclick="buyWeapon('Lighter and Propane')" /></td>
+        <td><input type="button" value="Buy" (click)="buyWeapon('Lighter and Propane')" /></td>
       </tr>
     </table>
   </div>
@@ -83,14 +83,14 @@ let items = [
         <td>2</td>
         <td>7</td>
         <td>Gives you the energy to function without a heart attack</td>
-        <td><input type="button" value="Buy" onclick="buyWeapon('Kyle Fuel')" /></td>
+        <td><input type="button" value="Buy" (click)="buyWeapon('Kyle Fuel')" /></td>
       </tr>
       <tr>
         <td>Counterfeit Money(500)</td>
         <td>5</td>
         <td>50</td>
         <td>This money doesn't look quite right...</td>
-        <td><input type="button" value="Buy" onclick="buyWeapon('Throwing Knife')" /></td>
+        <td><input type="button" value="Buy" (click)="buyWeapon('Throwing Knife')" /></td>
       </tr>
     </table>
   </div>

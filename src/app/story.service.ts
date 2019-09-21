@@ -10,7 +10,7 @@ export class StoryService implements OnInit {
   Story: Story = {
     Stages: {
       "Start": {
-        ImageUrl: "https://fsmedia.imgix.net/25/19/2e/e6/7feb/409e/aca0/7c4d8344a94d/area-51-is-revealed-in-extraordinary-detail-on-google-maps.png?rect=107%2C37%2C1219%2C611&auto=format%2Ccompress&dpr=2&w=650",
+        ImageUrl: null,
         Title: "Welcome to RAID AREA 51",
         Type: StoryStageType.Start,
         Variables: {
