@@ -11,7 +11,7 @@ import { Opponent } from 'src/app/Opponent';
 
 
 export class PlayerService {
-  player: Player = new Player(null, null, null, null, null, null, null, null, null);
+  player: Player = new Player(null, null, null, 10, 10, null, null, 25, null);
   weapon: PlayerWeapon = new PlayerWeapon(null, null, null, null, null, null, null, null);
 
   constructor(private enemyService: EnemyService) {
@@ -40,22 +40,14 @@ export class PlayerService {
   //}
 
   Attack(enemyName: string) {
-    let playerCombatOffense = 10;
-    let playerCombatDefense = 10;
-    let playerHealth = 25;
-
-
-    let opponentCombatOffense = 6;
-    let opponentCombatDefense = 6;
-    let opponentHealth = 10;
 
     let enemy = this.enemyService.Enemies[enemyName];
     let enemyWeapon = this.enemyService.opponentweapon;
 
-    if (playerCombatOffense >= opponentCombatDefense) {
+    if (this.player.combatOffense >= enemy.combatDefense) {
       enemy.health -= 7;
     }
-    if (playerCombatDefense === 10) {
+    if (this.player.combatOffense === 10) {
       this.player.health -= 5;
     }
   }
