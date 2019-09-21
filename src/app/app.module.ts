@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
 import { DecisionComponent } from './decision/decision.component';
 import { PlayComponent } from './play/play.component';
+import { EnemyComponent } from './enemy/enemy.component';
 
 @NgModule({
   declarations: [
