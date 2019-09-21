@@ -4,60 +4,60 @@
 //let bhDefenseTotal = 0;
 //let damage = 0;
 
-function BountyHunter(firstName, lastName, age, combatOffense, combatDefense, luck, hack, health) {
-  let _this = this;
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.age = age;
-  this.combatOffense = combatOffense;
-  this.combatDefense = combatDefense;
-  this.luck = luck;
-  this.hack = hack;
-  this.health = health;
-}
 
-export class Player {
+//name: string;
+//weight: number;
+//cost: number;
+//description: string;
 
-  firstName: string;
-  lastName: string;
-  age: number;
-  combatOffense: number;
-  combatDefense: number;
-  luck: number;
-  hack: number;
-  health: number;
-  image: string;
-}
 
-export class Weapon {
-  //name, range, minDamage, maxDamage, weight, toHitModifier, rateOfFire, cost
-  name: string;
-  range: number;
-  minDamage: number;
-  maxDamage: number;
-  weight: number;
-  toHitModifier: number;
-  rateOfFire: number;
-  cost: number;
-}
 
-//export class Armor {
-////name, weight, damageReduction, durability, cost
 
+
+//function PlayerCharacter(firstName, lastName, age, combatOffense, combatDefense, luck, hack, health) {
+//  let _this = this;
+//  this.firstName = firstName;
+//  this.lastName = lastName;
+//  this.age = age;
+//  this.combatOffense = combatOffense;
+//  this.combatDefense = combatDefense;
+//  this.luck = luck;
+//  this.hack = hack;
+//  this.health = health;
 //}
 
-export class Item {
-  //name, weight, cost, description
-  name: string;
-  weight: number;
-  cost: number;
-  description: string;
+export class Player {
+  constructor(
+    public firstName: string,
+    public lastName: string,
+    public age: number,
+    public combatOffense: number,
+    public combatDefense: number,
+    public luck: number,
+    public hack: number,
+    public health: number,
+    public image: string
+  ) {}
 }
+export class PlayerWeapon {
+  //name, range, minDamage, maxDamage, weight, toHitModifier, rateOfFire, cost
+  constructor(
+      public name: string,
+      public range: string,
+      public minDamage: number,
+      public maxDamage: number,
+      public weight: number,
+      public toHitModifier: number,
+      public rateOfFire: number,
+      public cost: number
+  ) {}
+}
+
 
 //Points between hack, luck, health, combat offense, combat defense. Spend 40 skill points.
-export class Combat {
+//export class Combat {
 
-}
+//}
 //let getBountyHunterData = () => {
 //  createBountyHunter();
 //  getBountyHunterWeaponInfo(bountyHunter.equipWeapon);
@@ -75,3 +75,28 @@ export class Combat {
 //  document.getElementById("bhHealth").innerHTML = bountyHunter.health.toString();
 
 //};
+
+//let attack = () => {
+//  if (bhDefenseTotal <= 0) {
+//    bountyHunter.health += bhDefenseTotal;
+//  }
+//  document.getElementById("bhHealth").innerHTML = bountyHunter.health;
+//  document.getElementById("health").innerHTML = rehalRodian["health"];
+//  if (bountyHunter.health < 0) {
+//    window.location.href = "gameOver.html"
+//  }
+//  if (rehalRodian["health"] < 0 && bountyHunter.health >= 0) {
+//    window.location.href = "bar1.html";
+//    money = parseInt(sessionStorage.getItem("money"));
+//    money = money + 800;
+//    sessionStorage.setItem("money", money.toString());
+//  }
+//  if (bhOffenseTotal > 0) {
+//    rehalRodian["health"] -= damage;
+//    let toHitMod = getRandomInt(1, 10);
+
+//    bhOffenseTotal = bountyHunter.combatOffense + toHitMod + bountyHunterWeapon.toHitModifier - rehalRodian["combatDefense"];
+//    document.getElementById("bhHitChance").innerHTML = bhOffenseTotal.toString();
+//    return bhOffenseTotal;
+//  }
+//}
