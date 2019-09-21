@@ -1,3 +1,6 @@
 body {
-  background-color: #60939e
+  background-image: url("camo1.jpg")
+}
+h1, p {
+  color: #50c700
 }

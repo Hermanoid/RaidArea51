@@ -1,3 +1,5 @@
-<p>
-  decision works!
-</p>
+<h1>{{story.stage.Title}}</h1>
+<p *ngIf="story.stage.Variables">{{story.stage.Variables.Dialogue}}<p>
+  <div *ngIf="story.stage.Options">
+    <button *ngFor="let option of story.stage.Options" (click)="story.setStage(option.id)">{{option.text}}</button>
+  </div>
