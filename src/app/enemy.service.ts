@@ -1,6 +1,14 @@
 import { Opponent, OpponentWeapon } from 'src/app/Opponent';
 import { Injectable } from '@angular/core';
-
+//public firstName: string,
+//  public lastName: string,
+//    public age: number,
+//      public combatOffense: number,
+//        public combatDefense: number,
+//          public luck: number,
+//            public hack: number,
+//              public health: number,
+//                public image: string
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +17,14 @@ export class EnemyService {
   Enemies: { [name: string]: Opponent } = {
     FBIAgent: {
       firstName: "Bob",
-      lastName: "Classified"
+      lastName: "Classified",
+      age: 26,
+      combatOffense: 5,
+      combatDefense: 5,
+      luck: 0,
+      hack: 0,
+      health: 10,
+      image: "C:\Source\RaidArea51\src\assets\fbiman.jpg"
     }
   }
   opponent: Opponent = new Opponent(null, null, null, null, null, null, null, null, null);
