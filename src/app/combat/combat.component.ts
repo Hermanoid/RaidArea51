@@ -17,7 +17,7 @@ export class CombatComponent implements OnInit {
 
   attack() {
     if (Math.random() > 0.5) {
-      this.storyService.setStage("School");
+      this.storyService.setStage(this.storyService.stage.Variables.next);
     }
     //if (!this.storyService.stage.Variables.Enemy) {
     //  console.warn("Enemy was not defined on stage");
